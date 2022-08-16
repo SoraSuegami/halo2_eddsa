@@ -1,0 +1,28 @@
+[package]
+name = "halo2_eddsa"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dev-dependencies]
+criterion = { version = "0.3", features = ["html_reports"] }
+rand_xorshift = "0.3"
+ark-std = { version = "0.3", features = ["print-trace"] }
+
+[dependencies]
+subtle = "2.4"
+ff = "0.12.0"
+group = "0.12.0"
+pasta_curves = "0.4.0"
+static_assertions = "1.1.0"
+rand = "0.8"
+rand_core = { version = "0.6", default-features = false }
+lazy_static = { version = "1.4.0"}
+num-bigint = "0.4.3"
+num-traits = "0.2"
+halo2curves = {git = "https://github.com/SoraSuegami/halo2curves", branch = "curve25519", version = "0.2.0"}
+halo2wrong = {git = "https://github.com/privacy-scaling-explorations/halo2wrong.git", version = "0.1.0"}
+maingate = {git = "https://github.com/privacy-scaling-explorations/halo2wrong.git", version = "0.1.0"}
+integer = {git = "https://github.com/privacy-scaling-explorations/halo2wrong.git", version = "0.1.0"}
+ecc = {git = "https://github.com/privacy-scaling-explorations/halo2wrong.git", version = "0.1.0"}
